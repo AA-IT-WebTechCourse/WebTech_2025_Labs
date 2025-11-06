@@ -1,0 +1,22 @@
+Git:
+Link : https://git-scm.com/
+
+Github: 
+Link : https://github.com/
+
+Github Copilot:
+Regiter Link : https://github.com/education/students
+Benefit: https://education.github.com/pack
+
+Github VS Code Extension:
+Link : https://code.visualstudio.com/docs/setup/setup-overview
+
+Node:
+Link : https://nodejs.org/en/download (Download V22.* LTS Version)
+
+React app Setup:
+Vite : https://react.dev/learn/build-a-react-app-from-scratch
+Command : npm create vite@latest my-react-app -- --template react (Replace 'my-react-app' with your app name)
+Install dependencies: npm install
+Run the app: npm run dev
+
