@@ -11,7 +11,7 @@ class SimpleClassComponents extends Component {
     render() {
         return (
             <div>
-                 <h1>Vite + React</h1>
+                 <h1>Vite + React from SimpleClassComponents</h1>
             </div>
         );
     }
