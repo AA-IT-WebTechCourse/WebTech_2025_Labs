@@ -17,10 +17,10 @@ function App() {
     <>
     <BrowserRouter>
       <Navbar />
-      <HooksContainer />
       <Routes>
         <Route path="/" element={<SimpleClassComponents />} />
         <Route path="/functional" element={<SimpleFunctionalComponent student={Student} teacher={Teacher} />} />
+        <Route path="/hooks" element={<HooksContainer />} />
       </Routes>
 
     </BrowserRouter>

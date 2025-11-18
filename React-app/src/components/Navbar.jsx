@@ -7,6 +7,8 @@ function Navbar() {
             <Link to="/">Home</Link>
             {" | "}
             <Link to="/functional">Functional Component</Link>
+            {" | "}
+            <Link to="/hooks">Hooks</Link>
         </nav>
     );
 }
