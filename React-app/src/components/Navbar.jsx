@@ -9,6 +9,8 @@ function Navbar() {
             <Link to="/functional">Functional Component</Link>
             {" | "}
             <Link to="/hooks">Hooks</Link>
+            {" | "}
+            <Link to="/theme">Theme</Link>
         </nav>
     );
 }
