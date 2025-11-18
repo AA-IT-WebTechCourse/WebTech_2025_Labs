@@ -4,15 +4,17 @@
 2. Run the installer and follow the on-screen instructions. Make sure to check the box that says "Add Python to PATH" during installation.
 3. After installation, open a command prompt (Windows) or terminal (Mac/Linux) and verify the installation by running the following commands:
 
+Use any one whichever works on your system:
 ```bash
 python --version
 python3 --version
+py --version
 ```
 
 ###  VS Code Extensions for Python Development:
 - Python (by Microsoft)
 - Django (by Baptiste Darthenay)
-- SQLite by yy0931
+- SQLite by yy0931 (https://marketplace.visualstudio.com/items?itemName=yy0931.vscode-sqlite3-editor)
 
 ### Setting Up a Virtual Environment:
 1. If you don't have `venv` installed, you can install it using pip:
@@ -27,12 +29,12 @@ pip install virtualenv
 
    - On Windows:
      ```bash
-     python -m venv venv
+     python -m venv .venv
      ```
 
    - On Mac/Linux:
      ```bash
-     python3 -m venv venv
+     python3 -m venv .venv
      ```
 5. Activate the virtual environment:
     - On Windows:
@@ -50,6 +52,7 @@ pip install virtualenv
 
 ```bash
 pip install django
+pip install django-cors-headers
 ```
 
 ### Using Requirements File (Recommended):

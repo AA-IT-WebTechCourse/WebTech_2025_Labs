@@ -11,6 +11,5 @@
     - Views
     - Templates
     - URL routing
-- Integrating App api with React frontend.
-
-- Django Rest Framework  
+- Django admin panel
+- Creating Superuser
