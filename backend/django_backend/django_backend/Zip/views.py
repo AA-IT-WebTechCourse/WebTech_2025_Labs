@@ -1,6 +1,5 @@
-from django.shortcuts import render, redirect
-from .forms import UserRegistrationForm, UserLoginForm
 from django.contrib.auth.models import User
+from django.shortcuts import render
 from rest_framework import permissions
 from rest_framework.decorators import (
     api_view,
@@ -15,28 +14,9 @@ from .serializers import UserSerializer
 
 
 def students(request):
-    students = [
-        {'first_name': 'John', 'last_name': 'Doe', 'email': 'john.doe@example.com'},
-        {'first_name': 'Jane', 'last_name': 'Smith', 'email': 'jane.smith@example.com'},
-    ]
-    return render(request, 'student_template.html', context={'students': students})
-
-
-def register(request):
-    if request.method == 'POST':
-        form = UserRegistrationForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('login')
-    else:
-        form = UserRegistrationForm()
-        return render(request, 'register.html', context={'form': form})
-    
-
-def login_form(request):
-    form = UserLoginForm()
-    return render(request, 'login.html', context={'form': form})
-
+    # //define 3 students
+    # Return the highest scorer among them
+    return render(request, 'students.html')
 
 
 @api_view(['GET'])
