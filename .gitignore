@@ -6167,3 +6167,6 @@ backend/.venv/Scripts/pip3.exe
 backend/.venv/Scripts/python.exe
 backend/.venv/Scripts/pythonw.exe
 backend/.venv/Scripts/sqlformat.exe
+backend/django_backend/first_app/__pycache__/models.cpython-312.pyc
+backend/django_backend/first_app/__pycache__/urls.cpython-312.pyc
+backend/django_backend/first_app/__pycache__/views.cpython-312.pyc
