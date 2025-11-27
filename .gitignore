@@ -1,4 +1,4 @@
-backend/.venv/pyvenv.cfg
+backend/.venv/*
 backend/.venv/Lib/site-packages/asgiref/__init__.py
 backend/.venv/Lib/site-packages/asgiref/compatibility.py
 backend/.venv/Lib/site-packages/asgiref/current_thread_executor.py
