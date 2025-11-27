@@ -1,6 +1,10 @@
 from django.shortcuts import render, redirect
 from .forms import UserRegistrationForm, UserLoginForm
-
+from .models import Student
+import json
+from django.views.decorators.csrf import csrf_exempt
+from django.http import HttpResponse
+from django.contrib.auth import authenticate
 # Create your views here.
 
 def students(request):
@@ -23,5 +27,31 @@ def register(request):
     
 
 def login_form(request):
+    if request.method == 'POST':
+        form = UserLoginForm(request.POST)
+
+        user = authenticate(
+            username=form.data.get('username'),
+            password=form.data.get('password')
+        )
+        if form.is_valid():
+            return HttpResponse("Login Successful")
     form = UserLoginForm()
     return render(request, 'login.html', context={'form': form})
+
+
+@csrf_exempt
+def student_save(request):
+    if request.method == 'POST':
+        body = request.body
+        json_data = json.loads(body)
+        
+        first_name = json_data.get('first_name')
+        last_name = json_data.get('last_name')
+        email = json_data.get('email')
+
+        student = Student(first_name=first_name, last_name=last_name, email=email)
+        student.save()
+        return HttpResponse("Student saved successfully")
+    else:
+        raise ValueError("Invalid request method")
