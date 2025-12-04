@@ -85,6 +85,16 @@ python manage.py migrate
 python manage.py runserver
 ````
 
+Returning users:
+````bash
+ .venv\Scripts\activate  # On Windows
+ source venv/bin/activate  # On Mac/Linux
+````
+
+````
+  python manage.py runserver
+````
+
 
 ### Creating a Superuser:
 ````bash
